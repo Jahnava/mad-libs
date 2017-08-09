@@ -37,6 +37,35 @@ function trueOrFalse(wasThatTrue) {
 }
 trueOrFalse(true);
 
+//testing for greater or equal
+function Apples(val) {
+  if (val >= 20) {
+    return "squished 20 or more Apples";
+  }
+  if (val >= 10) {
+    return "squished 10 or more apples";
+  }
+  return "squished nine or less apples";
+}
+
+Apples(20); //change number in console to test
+
+
+function testLessThan(val) {
+  if (val < 25) {
+    return "Under 25";
+  }
+
+  if (val < 55) {
+    return "Under 55";
+  }
+
+  return "55 or Over";
+}
+
+// Change this value in console to test
+testLessThan(10);
+
 //return the number that is greater than val. change testGreaterThan(number) to get a new answer in the console.
 function testGreaterThan(val) {
   if (val > 100) {
@@ -47,7 +76,37 @@ function testGreaterThan(val) {
   }
   return "10 or Under";
 }
-testGreaterThan(11);
+testGreaterThan(11); //change number in console to test
+
+//if the value is less than or equal to 50 and greater than orequal to 25 the console will return the string "yes" otherwise it'll return no.
+function testLogicalAnd(val) {
+
+  if (val <= 50 && val >= 25) {
+     {
+      return "Yes";
+    }
+  }
+
+//else and else if test numbers in the console  
+function testElseIf(val) {
+
+  if (val > 10) {
+    return "Greater than 10";
+
+  } else if (val < 5) {
+    return "Smaller than 5";
+
+  } else {
+  return "Between 5 and 10";
+}
+}
+
+  // Only change code above this line
+  return "No";
+}
+
+// Change this in console to test
+testLogicalAnd(10);
 
 
 //initializes the the called functions into the console
@@ -58,6 +117,9 @@ function init(){
     testStrictNotEqual();
     trueOrFalse();
     testGreaterThan();
+    Apples();
+    testLessThan();
+    testLogicalAnd();
 
   // this doesn't do anything yet (except logging),
   // but the HTML file automatically calls it
