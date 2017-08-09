@@ -37,7 +37,17 @@ function trueOrFalse(wasThatTrue) {
 }
 trueOrFalse(true);
 
-
+//return the number that is greater than val. change testGreaterThan(number) to get a new answer in the console.
+function testGreaterThan(val) {
+  if (val > 100) {
+    return "Over 100";
+  }
+  if (val > 10) {
+    return "Over 10";
+  }
+  return "10 or Under";
+}
+testGreaterThan(11);
 
 
 //initializes the the called functions into the console
@@ -46,7 +56,8 @@ function init(){
     reusableFunction();
     timesFive();
     testStrictNotEqual();
-    trueOrFalse(wasThatTrue);
+    trueOrFalse();
+    testGreaterThan();
 
   // this doesn't do anything yet (except logging),
   // but the HTML file automatically calls it
