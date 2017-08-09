@@ -12,10 +12,41 @@ function reusableFunction() {
 }
 
 reusableFunction();
+
+//timesFive
+function timesFive(num) {
+  return num * 5;
+}
+var answer = timesFive();
+
+//strict not equal
+function testStrictNotEqual(val) {
+    if (val !==17) {
+  return "Not Equal";
+  }
+  return "Equal";
+}
+testStrictNotEqual(10);
+
+//true or false if statement
+function trueOrFalse(wasThatTrue) {
+  if (wasThatTrue) {
+    return "Yes, that was true";
+  }
+  return "No, that was false";
+}
+trueOrFalse(true);
+
+
+
+
 //initializes the the called functions into the console
 function init(){
     wordBlanks();
     reusableFunction();
+    timesFive();
+    testStrictNotEqual();
+    trueOrFalse(wasThatTrue);
 
   // this doesn't do anything yet (except logging),
   // but the HTML file automatically calls it
