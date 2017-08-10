@@ -87,7 +87,7 @@ function testLogicalAnd(val) {
     }
   }
 
-//else and else if test numbers in the console  
+//else and else if test numbers in the console
 function testElseIf(val) {
 
   if (val > 10) {
@@ -100,14 +100,35 @@ function testElseIf(val) {
   return "Between 5 and 10";
 }
 }
-
-  // Only change code above this line
   return "No";
 }
 
 // Change this in console to test
 testLogicalAnd(10);
 
+
+
+//if else if statement
+function testSize(num) {
+ if (num < 5) {
+  return "Tiny";
+}
+  else if (num < 10) {
+  return "Small";
+}
+  else if (num <15) {
+  return "Medium";
+}
+  else if (num < 20) {
+  return "Large";
+}
+  else
+  return "Huge";
+
+}
+
+// Change this value to test in console
+testSize(7);
 
 //initializes the the called functions into the console
 function init(){
@@ -120,6 +141,7 @@ function init(){
     Apples();
     testLessThan();
     testLogicalAnd();
+    testSize();
 
   // this doesn't do anything yet (except logging),
   // but the HTML file automatically calls it
