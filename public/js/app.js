@@ -106,10 +106,6 @@ function testElseIf(val) {
 // Change this in console to test
 testLogicalAnd(10);
 
-function switchOfStuff(val) {
-  var answer = "";
-  // Only change code below this line
-
 
 //switch statement
 function switchOfStuff(val) {
@@ -186,8 +182,17 @@ function testSize(num) {
 // Change this value to test in console
 testSize(7);
 
+// return pattern for function
+function awesome(a, b){
+  if (a< 0 || b< 0)
+  return;
+
+  return Math.round(Math.pow(Math.sqrt(a) + Math.sqrt(b), 2));
+}
+
 //initializes the the called functions into the console
 function init(){
+   awesome();
     wordBlanks();
     reusableFunction();
     timesFive();
