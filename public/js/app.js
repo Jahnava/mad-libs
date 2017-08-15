@@ -106,6 +106,62 @@ function testElseIf(val) {
 // Change this in console to test
 testLogicalAnd(10);
 
+function switchOfStuff(val) {
+  var answer = "";
+  // Only change code below this line
+
+
+//switch statement
+function switchOfStuff(val) {
+  var answer = "";
+
+switch (val){
+case 'a':
+answer = "apple";
+break;
+case 'b':
+answer = "bird";
+break;
+case 'c':
+answer = "cat";
+break;
+default:
+answer = "stuff";
+}
+  return answer;
+}
+// Change this in console to test
+switchOfStuff(1);
+
+//changed if else chain to switch statement
+function chainToSwitch(val) {
+  var answer = "";
+  switch(val){
+    case "bob": answer="Marley"; break;
+    case 42: answer="The Answer"; break;
+    case 1: answer= "There is no #1"; break;
+    case 99: answer="Missed me by this much!"; break;
+    case 7: answer="Ate Nine"; break;
+  }
+
+  return answer;
+}
+
+
+function isLess(a, b) {
+switch (true) {
+case a < b:
+answer = true;
+break;
+case a > b:
+answer = false;
+break;
+}
+return answer;
+}
+
+// Change these values to test
+isLess(10, 15);
 
 
 //if else if statement
@@ -142,6 +198,7 @@ function init(){
     testLessThan();
     testLogicalAnd();
     testSize();
+    switchOfStuff();
 
   // this doesn't do anything yet (except logging),
   // but the HTML file automatically calls it
