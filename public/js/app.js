@@ -190,6 +190,16 @@ function awesome(a, b){
   return Math.round(Math.pow(Math.sqrt(a) + Math.sqrt(b), 2));
 }
 
+//object called myDog
+var myDog = {
+  "name":"Tucker",
+  "legs":60,
+  "tails":4,
+  "friends": ["yessss"]
+};
+
+
+
 //initializes the the called functions into the console
 function init(){
    awesome();
