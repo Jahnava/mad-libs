@@ -198,6 +198,15 @@ var myDog = {
   "friends": ["yessss"]
 };
 
+//Accessing Objects Properties with the Dot Operator
+ var unicorn = {
+   "mane": " long multicolor with glitter",
+   "body": "robust, white, and shiny",
+   "hoofs": "worn"
+ };
+
+ var maneValue = unicorn.mane;
+ var bodyValue = unicorn.body;
 
 
 //initializes the the called functions into the console
