@@ -209,6 +209,22 @@ var myDog = {
  var bodyValue = unicorn.body;
 
 
+//testing objects for Properties
+var adventure ={
+  mainDude: "mouse",
+  objective: "cheese",
+  where: "house",
+};
+
+function checkObj(leapInAir) {
+  if (adventure.hasOwnProperty(leapInAir)) {
+    return adventure[leapInAir];
+  } else {
+    return "not found";
+  }
+}
+
+
 //initializes the the called functions into the console
 function init(){
    awesome();
