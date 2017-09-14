@@ -224,6 +224,7 @@ function checkObj(leapInAir) {
   }
 }
 
+//nested object
 var Tea ={
   "cup":{
     "inside": {
@@ -236,8 +237,9 @@ var Tea ={
   }
 };
 
+//accessing nested object using bracket notation and by assigning cup, inside, etc.
 var drink =
-Tea.cup.inside["tea cup"];
+Tea.cup.inside["tea cup"]; //this equals chamomile
 
 //initializes the the called functions into the console
 function init(){
