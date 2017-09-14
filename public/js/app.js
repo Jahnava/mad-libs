@@ -224,6 +224,20 @@ function checkObj(leapInAir) {
   }
 }
 
+var Tea ={
+  "cup":{
+    "inside": {
+      "tea cup": "chamomile",
+      "tea bag": "herbs"
+    },
+    "outside":{
+      "table":"coaster"
+    }
+  }
+};
+
+var drink =
+Tea.cup.inside["tea cup"];
 
 //initializes the the called functions into the console
 function init(){
