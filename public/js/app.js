@@ -241,6 +241,14 @@ var Tea ={
 var drink =
 Tea.cup.inside["tea cup"]; //this equals chamomile
 
+//Iterate Through an Array with a For Loop
+var cryingBaby = [2, 3, 4, 5, 6];
+var sleep = 0;
+
+for (var jaya = 0; jaya < cryingBaby.length; jaya++) {
+sleep += cryingBaby[jaya];
+}
+
 //initializes the the called functions into the console
 function init(){
    awesome();
