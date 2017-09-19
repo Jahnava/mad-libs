@@ -249,6 +249,43 @@ for (var jaya = 0; jaya < cryingBaby.length; jaya++) {
 sleep += cryingBaby[jaya];
 }
 
+//nesing for loops
+function multiplyAll(arr){
+  var product = 1;
+
+  for (var i=0; i< arr.length; i++){
+    for (j=0; j < arr[i].length; j++) {
+      product*=arr[i][j];
+
+    return product;
+    }
+    multiplyAll([[1,2],[3,4],[5,6,7]]);
+  }
+}
+
+//while loop -runs while specific condition is true and stops when condition is no longer true
+
+var jahnavaArray = [];
+var i = 0;
+while(i < 5){
+  jahnavaArray.push(i);
+  i++;
+}
+
+//generate random fractions
+function thisIsRandom() {
+  return Math.random();
+}
+
+//generate random whole numbers
+var RandomWholeNumbers =
+Math.floor(Math.random()*20);
+
+function WholeNum(){
+  return Math.floor(Math.random() * 10);
+}
+
+
 //initializes the the called functions into the console
 function init(){
    awesome();
