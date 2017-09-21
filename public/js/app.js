@@ -285,6 +285,29 @@ function WholeNum(){
   return Math.floor(Math.random() * 10);
 }
 
+//sifting trough text by using //gi to select specifc wordBlanks
+var someWords = "I like to write words because words are good for expressing thoughts.";
+
+var selectingWords = /words/gi;
+var wordsCount = someWords.match(selectingWords).length;
+
+//sifting through a sentence to find numbers using /\d/g d=digit g=global
+
+var testString = "there are 2 apples and 1 orange.";
+
+var selectNumbers = /\d+/g;
+
+// This code counts the matches of expression in testString
+var digitCount = testString.match(selectNumbers).length;
+
+//selceting spaces
+
+var spaceyStuff = "How many spaces are there in this sentence?";
+
+var howManySpaces = /\s+/g;
+
+// This code counts the matches of expression in testString
+var spaceCount = testString.match(howManySpaces).length;
 
 //initializes the the called functions into the console
 function init(){
