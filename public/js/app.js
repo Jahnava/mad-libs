@@ -323,6 +323,12 @@ var singleVal = array.reduce(function(previousVal, currentVal){
   return previousVal + currentVal;
 }, 0);
 
+//using .filter to filter numbers out of an array
+var oldArray = [1,2,3,4,5,6,7,8,9,10];
+var newArray = oldArray.filter(function(val){
+  return val <6;
+});
+
 //initializes the the called functions into the console
 function init(){
    awesome();
