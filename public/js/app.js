@@ -329,6 +329,12 @@ var newArray = oldArray.filter(function(val){
   return val <6;
 });
 
+//use sort to sort an array. b-a sorts the numbers from largest to smallest and calling on a-b sorts form smallest to largest.
+var array = [1, 10, 20, 6];
+array.sort(function(a,b) {
+  return b-a;
+});
+
 //initializes the the called functions into the console
 function init(){
    awesome();
