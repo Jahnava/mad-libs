@@ -309,6 +309,20 @@ var howManySpaces = /\s+/g;
 // This code counts the matches of expression in testString
 var spaceCount = testString.match(howManySpaces).length;
 
+//construct objects with functions
+var Foot = function() {
+  this.toes = 5;
+  this.malleolus = 2;
+  this.heel = 1;
+};
+
+//using .reduce to add up the sum of my array. The sum will show up in the console once the numbers in the array have been added
+var array = [2,3,4,5,6];
+var singleVal =0;
+var singleVal = array.reduce(function(previousVal, currentVal){
+  return previousVal + currentVal;
+}, 0);
+
 //initializes the the called functions into the console
 function init(){
    awesome();
