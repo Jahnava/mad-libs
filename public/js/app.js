@@ -335,6 +335,25 @@ array.sort(function(a,b) {
   return b-a;
 });
 
+//using .reverse to reverse the elements of an array into a new array
+var array = [1,2,3,4,5,6,7,8];
+var newArray =[];
+newArray = array.reverse();
+
+//return larest number in an array
+function largestOfFour(arr) {
+   var largestNumber = [0,0,0,0];
+   for(var arrayIndex = 0; arrayIndex < arr.length; arrayIndex++) {
+    for(var subArrayIndex = 0; subArrayIndex < arr[arrayIndex].length; subArrayIndex++) {
+       if(arr[arrayIndex][subArrayIndex] > largestNumber[arrayIndex]) {
+          largestNumber[arrayIndex] = arr[arrayIndex][subArrayIndex];
+        }
+    }
+ }
+ return largestNumber;
+}
+largestOfFour([[6, 15, 1, 3], [11, 7, 1, 6], [2, 5, 37, 9], [100, 101, 85, 1]]);
+
 //initializes the the called functions into the console
 function init(){
    awesome();
